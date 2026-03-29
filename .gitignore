@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+
+# HuggingFace cache
+.cache/
+
+# Model files (too large)
+models/
+
+# Mac files
+.DS_Store
