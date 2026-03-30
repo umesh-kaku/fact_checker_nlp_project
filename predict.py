@@ -61,11 +61,11 @@ while True:
         break
     label, confidence, score, evidence = predict_claim_with_evidence(claim)
     print("Results:")
-    print(f"Claim: {claim}")
-    print(f"Predicted Label: {label}")
-    print(f"Confidence: {confidence:.2f}")
-    print(f"Validity Score: {score}/100")
-    print("Evidence")
+    print("Claim:", claim)
+    print("Predicted Label:", label)
+    print("Confidence:", confidence)
+    print("Validity Score:", score, "/100")
+    print("Evidence retrieved:")
     print(evidence[:500], "...")
     if label == "SUPPORT":
         print("Interpretation: LIKELY TRUE/ Healthly")
